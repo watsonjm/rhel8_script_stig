@@ -7238,7 +7238,7 @@ fi
 if [ ! -f /.dockerenv ] && [ ! -f /run/.containerenv ]; then
 
 if LC_ALL=C grep -q -m 1 "^install can" /etc/modprobe.d/can.conf ; then
-	sed -i 's/^install can.*/install can /bin/true/g' /etc/modprobe.d/can.conf
+	sed -i 's|^install can.*|install can /bin/true|g' /etc/modprobe.d/can.conf
 else
 	echo -e "\n# Disable per security requirements" >> /etc/modprobe.d/can.conf
 	echo "install can /bin/true" >> /etc/modprobe.d/can.conf
@@ -7257,7 +7257,7 @@ fi
 if [ ! -f /.dockerenv ] && [ ! -f /run/.containerenv ]; then
 
 if LC_ALL=C grep -q -m 1 "^install atm" /etc/modprobe.d/atm.conf ; then
-	sed -i 's/^install atm.*/install atm /bin/true/g' /etc/modprobe.d/atm.conf
+	sed -i 's|^install atm.*|install atm /bin/true|g' /etc/modprobe.d/atm.conf
 else
 	echo -e "\n# Disable per security requirements" >> /etc/modprobe.d/atm.conf
 	echo "install atm /bin/true" >> /etc/modprobe.d/atm.conf
@@ -7276,7 +7276,7 @@ fi
 if [ ! -f /.dockerenv ] && [ ! -f /run/.containerenv ]; then
 
 if LC_ALL=C grep -q -m 1 "^install tipc" /etc/modprobe.d/tipc.conf ; then
-	sed -i 's/^install tipc.*/install tipc /bin/true/g' /etc/modprobe.d/tipc.conf
+	sed -i 's|^install tipc.*|install tipc /bin/true|g' /etc/modprobe.d/tipc.conf
 else
 	echo -e "\n# Disable per security requirements" >> /etc/modprobe.d/tipc.conf
 	echo "install tipc /bin/true" >> /etc/modprobe.d/tipc.conf
@@ -7295,7 +7295,7 @@ fi
 if [ ! -f /.dockerenv ] && [ ! -f /run/.containerenv ]; then
 
 if LC_ALL=C grep -q -m 1 "^install sctp" /etc/modprobe.d/sctp.conf ; then
-	sed -i 's/^install sctp.*/install sctp /bin/true/g' /etc/modprobe.d/sctp.conf
+	sed -i 's|^install sctp.*|install sctp /bin/true|g' /etc/modprobe.d/sctp.conf
 else
 	echo -e "\n# Disable per security requirements" >> /etc/modprobe.d/sctp.conf
 	echo "install sctp /bin/true" >> /etc/modprobe.d/sctp.conf
@@ -7314,7 +7314,7 @@ fi
 if [ ! -f /.dockerenv ] && [ ! -f /run/.containerenv ]; then
 
 if LC_ALL=C grep -q -m 1 "^install firewire-core" /etc/modprobe.d/firewire-core.conf ; then
-	sed -i 's/^install firewire-core.*/install firewire-core /bin/true/g' /etc/modprobe.d/firewire-core.conf
+	sed -i 's|^install firewire-core.*|install firewire-core /bin/true|g' /etc/modprobe.d/firewire-core.conf
 else
 	echo -e "\n# Disable per security requirements" >> /etc/modprobe.d/firewire-core.conf
 	echo "install firewire-core /bin/true" >> /etc/modprobe.d/firewire-core.conf
@@ -7333,7 +7333,7 @@ fi
 if [ ! -f /.dockerenv ] && [ ! -f /run/.containerenv ]; then
 
 if LC_ALL=C grep -q -m 1 "^install bluetooth" /etc/modprobe.d/bluetooth.conf ; then
-	sed -i 's/^install bluetooth.*/install bluetooth /bin/true/g' /etc/modprobe.d/bluetooth.conf
+	sed -i 's|^install bluetooth.*|install bluetooth /bin/true|g' /etc/modprobe.d/bluetooth.conf
 else
 	echo -e "\n# Disable per security requirements" >> /etc/modprobe.d/bluetooth.conf
 	echo "install bluetooth /bin/true" >> /etc/modprobe.d/bluetooth.conf
